@@ -1,0 +1,30 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_list_viewpager"/>
+
+
+    <!-- 左侧抽屉 -->
+    <!--layout_gravity: 定义抽屉的位置（start 左侧，end 右侧）-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nv_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_hander"
+        app:menu="@menu/drawer_view"/>
+
+    <!--右侧抽屉-->
+    <ListView
+        android:id="@+id/List_view"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@android:color/holo_blue_light" />
+
+</android.support.v4.widget.DrawerLayout>

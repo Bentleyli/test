@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Homes"/>
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_event"
+            android:title="News"/>
+        <item
+            android:id="@+id/nav_Tech"
+            android:icon="@drawable/ic_headset"
+            android:title="Tech"/>
+        <item
+            android:id="@+id/nav_Game"
+            android:icon="@drawable/ic_forum"
+            android:title="Game"/>
+    </group>
+
+    <item android:title="Setting">
+        <menu>
+            <item android:icon="@drawable/ic_dashboard"
+                android:title="OK"/>
+            <item android:icon="@drawable/ic_forum"
+                android:title="About"
+                android:id="@+id/nav_About"/>
+        </menu>
+    </item>
+
+</menu>
